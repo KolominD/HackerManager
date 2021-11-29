@@ -15,7 +15,7 @@ public class cashbackManagerTest {
     }
 
     @Test
-    public void testBoundaryBelowLimit() {
+    public void testWithBoundaryBelowLimit() {
         int actual = cash.remain(999);
         int expected = 1;
         assertEquals(actual, expected);
@@ -29,7 +29,7 @@ public class cashbackManagerTest {
     }
 
     @Test
-    public void testBoundary() {
+    public void testAllBoundary() {
         int actual = cash.remain(1000);
         int expected = 1000;
         assertEquals(actual, expected);
