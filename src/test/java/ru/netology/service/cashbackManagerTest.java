@@ -31,7 +31,7 @@ public class cashbackManagerTest {
     @Test
     public void testAllBoundary() {
         int actual = cash.remain(1000);
-        int expected = 1000;
-        assertEquals(actual, expected);
+        int expected = 0;
+        assertEquals(expected, actual);
     }
 }
